@@ -71,8 +71,8 @@ a:hover {
 }
 
 .JW {
-  width: 550px;
-  height: 550px;
+  width: 50%;
+  height: 50%;
 }
 
 .top-container {
@@ -102,6 +102,8 @@ a:hover {
 
 iframe {
   padding: 1%;
+  width: 50%;
+  height: 100%;
 }
 
 .jumbotron{
