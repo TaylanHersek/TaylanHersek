@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Taylan's Personal WebSite</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+
+<body>
+  <div class="top-container">
+    <h1><em>I'm Taylan</em></h1>
+    <img class="profile-picture" src="images/th.jpeg" height="250px" width="250px">
+    <div class="middle-container">
+      <div class="profile">
+        <h2><strong>Who am I?</strong></h2>
+        <p>I'm a technology addict project manager, trying to learn everything step by step.</p>
+        <p>I started with producing VR games with my game studio that I've co-founded in 2019, then jumped into developing AR gimmicks and after that <em> NFTs.</em></p>
+        <p>Now I'm learning frontend web development with <em>HTML, CSS and JavaScript</em>.</p>
+        <p>I've always been an entrepreneur and a leader, but now I want to be in the development side of things...</p>
+        <p>Currently, I'm a VR project manager at Negentra, which is an XR company in Eskişehir, Turkey.</p>
+        <h2><strong>What's next?</strong></h2>
+        <p>I want to get into <em>Three.JS</em> and start designing cool-looking new generation 3D websites.</p>
+        <p>I already have fundamental knowledge in Blender and 3D modeling and texturing.</p>
+        <p>Next, I aim to put everything I've learned together and become a frontend web developer...</p>
+      </div>
+
+      <!-- <model-viewer alt="3D image" src="3D/taylan.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" camera-controls auto-rotate></model-viewer> -->
+
+      <div class="AR">
+        <model-viewer id="mv-demo" shadow-intensity="1" src="models/taylan.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
+
+      </div>
+
+      <!--
+      <div class="AR">
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+        ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+        alt="A 3D model of an astronaut"
+        ar auto-rotate camera-controls></model-viewer>
+
+      </div> -->
+
+
+
+      <div class="skills">
+        <h2>My Skills & Interests</h2>
+        <div class="skill-row">
+          <img class="quest" src="images/quest.png" alt="OculusQuest">
+          <p>Normally I'm a project manager skilled and experienced in software project management and account management.</p>
+          <p><u><strong>However, I know how to:</strong></u></p>
+          <p>⚡Design basic websites⚡</p>
+          <p>⚡Edit videos⚡</p>
+          <p>⚡Model and texture 3D objects⚡</p>
+          <p>⚡Use AR to visualize 3D objects⚡</p>
+        </div>
+        <div class="skill-row">
+          <img class="nft" src="images/nft.jpeg" alt="">
+          <h2>Interests & Hobbies</h2>
+          <p>🪐XR & Metaverse🪐</p>
+          <p>🪐NFTs & Blockchain🪐</p>
+          <p>🪐Artificial Intelligence🪐</p>
+        </div>
+      </div>
+      <hr>
+      <div class="contact-me">
+        <a href="mailto:taylanhersek@hotmail.com"><button class="btn" type="button" name="Contact">Get In Touch</button></a>
+        <h3>I'm very easy to reach, I always check my mails and messages</h3>
+        <p>Feel free to contact me, I do consultation for Metaverse companies/brands and mentorship for youngsters :)</p>
+      </div>
+    </div>
+
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in/taylanhersek/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/taylan__h">Twitter</a>
+      <p class="copyright">© Taylan Hersek</p>
+    </div>
+
+
+</body>
+
+</html>
