@@ -16,13 +16,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  <script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>
 </head>
 
 <body>
   <div class="top-container">
     <h1><em>I'm Taylan</em></h1>
-    <img class="profile-picture" src="images/th.jpeg" height="250px" width="250px">
+    <a href="about.html"><img class="profile-picture" src="images/th.jpeg" height="250px" width="250px"></a>
+
     <div class="middle-container">
       <div class="profile">
         <h2><strong>Who am I?</strong></h2>
@@ -37,13 +39,32 @@
         <p>Next, I aim to put everything I've learned together and become a frontend web developer...</p>
       </div>
 
-      <!-- <model-viewer alt="3D image" src="3D/taylan.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" camera-controls auto-rotate></model-viewer> -->
+      <!--
+      <div class="AR">
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+        ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+        alt="A 3D model of an astronaut"
+        ar auto-rotate camera-controls></model-viewer>
+
+      </div> -->
+
+      <!-- <div class="grid-container">
+        <model-viewer class="a"
+          src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.glb?1542147958948"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          shadow-intensity="1"
+          camera-controls auto-rotate
+          alt="A 3D model of an astronaut"
+          ></model-viewer>
+
+      </div> -->
 
       <div class="grid-container">
         <model-viewer class="a" shadow-intensity="1" src="models/taylan.glb" alt="Taylan Hersek 3D Model" ar auto-rotate camera-controls></model-viewer>
-
       </div>
-      
+
+
       <div class="skills">
         <h2>My Skills & Interests</h2>
         <div class="skill-row">
@@ -77,6 +98,14 @@
       <a class="footer-link" href="https://twitter.com/taylan__h">Twitter</a>
       <p class="copyright">© Taylan Hersek</p>
     </div>
+
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer@v0.3.1/dist/model-viewer.js">
+    </script>
+
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script nomodule src="https://unpkg.com/@google/model-viewer@v0.3.1/dist/model-viewer-legacy.js">
+    </script>
 
 
 </body>

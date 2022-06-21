@@ -3,6 +3,7 @@ body {
   color: white;
   text-align: center;
   font-family: 'Merriweather', serif;
+  background-color: black;
 }
 
 h1 {
@@ -53,6 +54,27 @@ a:hover {
   border-radius: 100%;
 }
 
+.Portfolio {
+  color:#0AA1DD;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 10px;
+  text-decoration: none;
+}
+
+.Portfolio:hover {
+  color: #EAF6F6;
+}
+
+
+.About {
+  color: #0AA1DD;
+}
+
+.JW {
+  width: 550px;
+  height: 550px;
+}
+
 .top-container {
   background-color: black;
   position: relative;
@@ -71,6 +93,23 @@ a:hover {
 .quest {
   width: 400.5px;
   height: 156px;
+}
+
+.footer {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+iframe {
+  padding: 1%;
+}
+
+.jumbotron{
+  background-color: rgba(12,12,12,.8);
+}
+
+.card-body {
+  background-color: black;
 }
 
 .btn {
@@ -130,4 +169,3 @@ model-viewer {
     grid-row: 1 / 5;
   }
 }
-
